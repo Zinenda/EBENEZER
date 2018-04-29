@@ -2,6 +2,7 @@
 
 <script src="/assets/js/jquery.min.js" defer></script>
 <script src="/assets/js/materialize.min.js" defer></script>
+<script src="/assets//js/masonry.pkgd.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 
 {% if page.title == "Liceu Ebenezer" %}
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="/assets/owl_carousel/assets/owl.theme.default.min.css">
     <script src="/assets/owl_carousel/owl.carousel.min.js" defer></script>
 
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel();
-      });
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel();
+        });
+    </script>
 {% endif %}
