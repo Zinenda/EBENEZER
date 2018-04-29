@@ -1,0 +1,29 @@
+<ul class="inline-list">
+    {% for item in site.data.social limit: 3 %}
+        <li>
+            <a 
+                href="{{ item.link }}" 
+                title="{{ item.name }}" 
+                class="btn-floating btn-flat tooltipped" 
+                data-position="top" 
+                data-delay="50"  
+                data-tooltip="{{ item.name }}">
+                <i class="fab fa-{{ item.icon }}"></i>
+            </a>
+        </li>
+    {% endfor %}
+
+    {% for item in site.data.social offset: 3 %}
+        <li>
+            <a 
+                href="{{ item.link }}" 
+                title="{{ item.name }}" 
+                class="btn-floating btn-flat tooltipped" 
+                data-position="top" 
+                data-delay="50"  
+                data-tooltip="{{ item.name }}">
+                <i class="fas fa-{{ item.icon }}"></i>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

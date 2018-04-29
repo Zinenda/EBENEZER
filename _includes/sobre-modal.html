@@ -1,0 +1,24 @@
+<div id="sobre-modal" class="modal">
+    <div class="modal-content">
+        <div class="container">
+            <h4 class="center-align">Mais Sobre Nós</h4>
+
+            <ul class="collapsible popout">
+                {% for item in site.sobre %}
+                    {% unless forloop.first %}
+                        <li>
+                            <div class="collapsible-header">{{ item.title }}</div>
+                            <div class="collapsible-body">
+                                {{ item.content }}  
+                            </div>
+                        </li>
+                    {% endunless %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        {% include social.html %}
+    </div>
+</div>
