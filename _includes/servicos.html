@@ -1,0 +1,28 @@
+<section id="servicos" class="section scrollspy">
+    <div class="container">
+        <h3 class="center-align">
+            Nossos <strong class="primary-color-text">Serviços</strong>
+        </h3>
+
+        <div class="row">
+            {% for item in site.servicos %}
+                <article class="col s12 l6">
+                    <div class="col l6">
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                    </div>
+
+                    <div class="col l6">
+                        <h4>{{ item.title }}</h4>
+                        <div class="justify">
+                            {{ item.content }}
+                        </div>
+                    </div>
+                </article>        
+            {% endfor %}
+        </div>
+
+        <div class="center">
+            <a href="/servicos" class="btn-large waves-effect waves-light">Mais Serviços</a>
+        </div>
+    </div>
+</section>

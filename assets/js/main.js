@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    M.AutoInit();
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.tabs').tabs({
@@ -7,6 +8,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('.fixed-action-btn').floatingActionButton();
     $('.slider').slider();
+    $('.parallax-container').parallax();
     $('.modal').modal();
     $('.tooltipped').tooltip();
     $('.collapsible').collapsible();

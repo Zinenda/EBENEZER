@@ -1,0 +1,24 @@
+<section id="planos" class="section grey lighten-4">
+    <div class="container">
+        <h3 class="center-align">Melhores <strong class="primary-color-text">Mensalidades</strong></h3>
+        <div class="owl-carousel owl-theme">
+            {% for item in site.mensalidade %}
+                <div class="hoverable center" style="border: solid 1px {{ site.color }};">
+                    <h3>
+                        <i class="fas fa-pencil"></i>
+                        <br>
+                        {{ item.title }}
+                    </h3>
+
+                    <p class="primary-color">
+                        <strong>{{ item.price }} MT/mês</strong>
+                    </p>
+
+                    <p class="justify">{{ item.content }}</p>
+
+                    <a href="#" class="btn-flat waves-effect waves-primary">Saiba Mais</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
