@@ -1,0 +1,32 @@
+- link: /
+  title: Home
+  icon: home
+
+- link: "#about"
+  title: About
+  icon: info
+
+- link: "#struture"
+  title: Company Structure
+  icon: organization
+
+- link: "#services"
+  title: Services
+  icon: briefcase
+
+- link: "#clients"
+  title: Clients
+  icon: user
+
+- link: "#partners"
+  title: Partners
+  icon: users
+  hightlight: true
+
+- link: "#locations"
+  title: Locations
+  icon: map-marker
+
+- link: blog.html
+  title: Blog News
+  icon: feed-rss

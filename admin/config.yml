@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - client
+  branch: master
+
+media_folder: "assets/img/uploads"
+  
+collections:
+
+  - label: "Slider"
+    name: "slider"
+    folder: "collections/_slider"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - label: "Sobre"
+    name: "sobre"
+    folder: "collections/_sobre"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - label: "Icones"
+        name: "icon"
+        widget: "select"
+        options: ["info-circle", "eye", "tasks", "handshake"]
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - label: "Secções"
+    name: "seccoes"
+    folder: "collections/_seccoes"
+    create: true
+    fields:
+      - {label: "Secção", name: "title", widget: "string"}
+      - label: "Icones"
+        name: "icon"
+        widget: "select"
+        options: ["info-circle", "folder", "papers", "users"]
+
+  - label: "Serviços"
+    name: "servicos"
+    folder: "collections/_servicos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Icones", name: "icon", widget: "string"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+
+  - label: "Planos Mensais"
+    name: "mensalidade"
+    folder: "collections/_mensalidade"
+    create: true
+    fields:
+      - {label: "Plano", name: "title", widget: "string"}
+      - {label: "Preço", name: "price", widget: "number"}
+      - {label: "Beneficios", name: "body", widget: "markdown"}
+
+  - label: "Galeria"
+    name: "gallery"
+    folder: "collections/_gallery"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+
+  - label: "Localização"
+    name: "location"
+    folder: "collections/_location"
+    create: true
+    fields:
+      - {label: "Province", name: "province", widget: "string"}
+      - {label: "Location", name: "location", widget: "markdown"}
+
+  - label: "Noticias"
+    name: "posts"
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Corpo", name: "body", widget: "markdown"}
