@@ -1,3 +1,61 @@
 ---
-layout: default
+layout: null
 ---
+
+<!DOCTYPE html>
+<html lang="pt">
+    {% include head.html %}
+    <body>
+        <style>
+            body {
+                background-image: url(/assets/img/header/cover.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                min-width: 100%;
+                height: 100vh;
+                color: #fff;
+            }
+
+            section {
+                height: 100vh;
+            }
+        </style>
+
+        <header class="center">
+            <section class="row">
+                <section class="col s12 l6 hoverable" style="background: rgba(0, 186, 252, .5);">
+                    <div class="container">
+                        <br><br><br><br>
+                        <img style="width: 200px;" src="{{ site.logo }}" alt="Liceu Ebenezer">
+                    
+                        <h4>Ensino Primário e Secundário Geral</h4>
+                        
+                        <a href="/liceu/" 
+                            class="btn-floating btn-large waves-effect waves-light tooltipped"
+                            data-position="top"
+                            data-delay="50"
+                            data-tooltip="Lice Ebenezer">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>    
+                </section>
+
+                <section class="col s12 l6 hoverable" style="background: rgba(51, 51, 51, .5);">
+                    <div class="container">
+                        <br><br><br><br>
+                        <img style="width: 200px;" src="{{ site.image }}" alt="IMEPE">
+                    
+                        <h4>Ensino Técnico Médio Profissional</h4>
+                        
+                        <a href="/imepe/" 
+                            class="btn-floating btn-large waves-effect waves-light tooltipped"
+                            data-position="top"
+                            data-delay="50"
+                            data-tooltip="Lice Ebenezer">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>    
+                </section>
+            </section>
+        </header>
