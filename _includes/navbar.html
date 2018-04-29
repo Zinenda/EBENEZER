@@ -1,15 +1,24 @@
 <div class="navbar-fixed">
     <nav class="nav-extended">
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo">
-                <img src="/assets/img/logotipo.png" alt="{{ site.title }}" style="height: 60px;" class="hide-on-med-and-down">
+            <a href="/" class="brand-logo center">
+                <img src="/assets/img/liceu_logo.png" alt="Liceu Ebenezer" class="hide-on-med-and-down center">
                 <span class="hide-on-large-only">{{ site.title }}</span>
             </a>
             <a data-target="sideNav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
 
+            <ul class="left hide-on-med-and-down">
+                <a href="#contactos-modal" class="btn-large waves-effect waves-light modal-trigger" title="Contactos"><i class="fas fa-envelope"></i> Contactos</a>
+            </ul>
             <ul class="right hide-on-med-and-down">
                 {% include nav.html %}
             </ul>
+        </div>
+
+        <div class="nav-content">
+            <a href="tel:+258 87 879 0215" class="hide-on-large-only btn-floating btn-large halfway-btn waves-effect waves-light">
+                <i class="fas fa-telephone"></i>
+            </a>
         </div>
     </nav>
 </div>

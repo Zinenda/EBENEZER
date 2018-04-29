@@ -1,32 +1,14 @@
-- link: /
-  title: Home
-  icon: home
+- link: "#sobre"
+  title: Sobre
 
-- link: "#about"
-  title: About
-  icon: info
+- link: "#planos"
+  title: Planos Mensais
 
-- link: "#struture"
-  title: Company Structure
-  icon: organization
+- link: "#servicos"
+  title: Serviços
 
-- link: "#services"
-  title: Services
-  icon: briefcase
+- link: "#noticias"
+  title: Noticias
 
-- link: "#clients"
-  title: Clients
-  icon: user
-
-- link: "#partners"
-  title: Partners
-  icon: users
-  hightlight: true
-
-- link: "#locations"
-  title: Locations
-  icon: map-marker
-
-- link: blog.html
-  title: Blog News
-  icon: feed-rss
+- link: "#galeria"
+  title: Galeria
