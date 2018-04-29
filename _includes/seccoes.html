@@ -1,0 +1,16 @@
+<section id="seccoes" class="section scrollspy primary-color white-text">
+    <div class="container">
+        {% for item in site.seccoes %}
+            <h4 class="center-align">
+                <span class="fa-2x fa-stack">
+                    <i class="fa-2x fa-stacked fa-circle"></i>
+                    <i class="fa-1x fa-stacked fas-{{ item.icon }}"></i>
+                </span>
+
+                <br>
+
+                {{ item.title }}
+            </h4>
+        {% endfor %}
+    </div>
+</section>
