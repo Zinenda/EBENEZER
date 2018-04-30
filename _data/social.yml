@@ -1,0 +1,23 @@
+# Facebook
+- link: https://facebook.com/liceuebenezer
+  name: Facebook
+  icon: facebook-f
+
+- link: https://m.me/liceuebenezer
+  name: Messenger
+  icon: facebook-messenger
+
+# Instagram
+- link: https://instagram.com/liceuebenezer
+  name: Instagram
+  icon: instagram
+
+# Cel
+- link: tel:+258 84 610 1512
+  name: Celular
+  icon: mobile
+
+# Email
+- link: mailto:info@ebenezer.com
+  name: Email
+  icon: envelope

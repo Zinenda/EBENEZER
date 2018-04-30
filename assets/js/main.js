@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    M.AutoInit();
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.tabs').tabs({

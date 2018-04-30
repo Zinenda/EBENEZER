@@ -1,11 +1,11 @@
 - link: "#sobre"
   title: Sobre
 
-- link: "#planos"
-  title: Planos Mensais
-
 - link: "#servicos"
   title: Serviços
+
+- link: "#planos"
+  title: Planos Mensais
 
 - link: "#noticias"
   title: Noticias
