@@ -1,13 +1,37 @@
 <div class="fixed-action-btn">
-    <div class="hide-on-small-only">
-        <a href="mailto:{{ site.email }}" class="btn-floating btn-large waves-effect waves-circle waves-light">
-            <i class="fas fa-envelope"></i>
-        </a>
-    </div>
+    <a class="waves-effect waves-light btn-floating btn-large">
+        <i class="fas fa-plus"></i>
+    </a>
 
-    <div class="hide-on-med-and-up">
-        <a href="tel: +258 84  380 8268" class="btn-floating btn-large waves-effect waves-circle waves-light">
-            <i class="fas fa-mobile"></i>
-        </a>
-    </div>
+    <ul>
+        <li>
+            <a 
+                href="tel:{{ site.celphone }}" 
+                class="waves-effect waves-light btn-floating tooltipped hide-on-med-and-up"
+                data-position="left"
+                data-tooltip="Ligue">
+                <i class="fas fa-phone"></i>
+            </a>
+        </li>
+
+        <li>
+            <a 
+                href="mailto:{{ site.email }}" 
+                class="waves-effect waves-light btn-floating tooltipped"
+                data-position="left"
+                data-tooltip="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+
+        <li>
+            <a 
+                href="/" 
+                class="waves-effect waves-light btn-floating tooltipped"
+                data-position="left"
+                data-tooltip="Página Inicial">
+                <i class="fas fa-home"></i>
+            </a>
+        </li>
+    </ul>
 </div>

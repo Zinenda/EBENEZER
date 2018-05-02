@@ -5,7 +5,9 @@ $(document).ready(function(){
         swipeable: true
     });
     $('.materialboxed').materialbox();
-    $('.fixed-action-btn').floatingActionButton();
+    $('.fixed-action-btn').floatingActionButton({
+        hoverEnabled: false
+    });
     $('.slider').slider();
     $('.parallax-container').parallax();
     $('.modal').modal();
