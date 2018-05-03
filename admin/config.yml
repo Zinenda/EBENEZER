@@ -23,10 +23,6 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - label: "Icones"
-        name: "icon"
-        widget: "select"
-        options: ["info-circle", "eye", "tasks", "handshake"]
       - {label: "Corpo", name: "body", widget: "markdown"}
 
   - label: "Secções"
