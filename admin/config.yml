@@ -25,17 +25,6 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Corpo", name: "body", widget: "markdown"}
 
-  - label: "Secções"
-    name: "seccoes"
-    folder: "collections/_seccoes"
-    create: true
-    fields:
-      - {label: "Secção", name: "title", widget: "string"}
-      - label: "Icones"
-        name: "icon"
-        widget: "select"
-        options: ["info-circle", "folder", "papers", "users"]
-
   - label: "Serviços"
     name: "servicos"
     folder: "collections/_servicos"

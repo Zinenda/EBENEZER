@@ -1,21 +1,42 @@
 <div class="navbar-fixed">
     <nav class="nav-extended">
         <div class="nav-wrapper">
-            <a href="{{ page.url }}" class="brand-logo center hide-on-large-only">
+            <a href="{{ page.url }}" class="brand-logo center hide-on-small-only">
                 <img src="/assets/img/liceu_logo.png" alt="Liceu Ebenezer" class="hide-on-med-and-down center">
             </a>
 
             <a href="{{ page.url }}" class="brand-logo hide-on-med-and-up left">{{ page.title }}</a>
 
-            <ul class="left hide-on-med-and-down">
-                <a 
-                    href="#contactos-modal" 
-                    class="btn-large waves-effect waves-light modal-trigger" 
-                    title="Contactos">
-                    <i class="fas fa-envelope"></i> Contactos
-                </a>
-            </ul>
             <ul class="right hide-on-med-and-down">
+                {% for item in site.data.social limit: 3 %}
+                    <li>
+                        <a 
+                            href="{{ item.link }}" 
+                            title="{{ item.name }}" 
+                            class="tooltipped" 
+                            data-position="bottom" 
+                            data-delay="50"  
+                            data-tooltip="{{ item.name }}">
+                            <i class="fab fa-{{ item.icon }}"></i>
+                        </a>
+                    </li>
+                {% endfor %}
+
+                {% for item in site.data.social offset: 3 %}
+                    <li>
+                        <a 
+                            href="{{ item.link }}" 
+                            title="{{ item.name }}" 
+                            class="tooltipped" 
+                            data-position="bottom" 
+                            data-delay="50"  
+                            data-tooltip="{{ item.name }}">
+                            <i class="fas fa-{{ item.icon }}"></i>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="left hide-on-med-and-down">
                 {% include nav.html %}
             </ul>
         </div>

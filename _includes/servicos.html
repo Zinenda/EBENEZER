@@ -1,28 +1,20 @@
-<section id="servicos" class="section scrollspy">
+<section id="servicos" class="section scrollspy primary-color center">
     <div class="container">
-        <h3 class="center-align">
-            Nossos <strong class="primary-color-text">Serviços</strong>
+        <h3>
+            Nossos <strong class="white-text bold">Serviços</strong>
         </h3>
 
-        <div class="row">
+        <div class="owl-carousel owl-theme">
             {% for item in site.servicos %}
-                <article class="col s12 l6">
-                    <div class="col l6">
-                        <img src="{{ item.image }}" alt="{{ item.title }}">
-                    </div>
-
-                    <div class="col l6">
-                        <h4>{{ item.title }}</h4>
-                        <div class="justify">
-                            {{ item.content }}
-                        </div>
-                    </div>
-                </article>        
+                <h4>
+                    <span class="fa-stack fa-2x">
+                        <i class="fas fa-{{ item.icon }} fa-stack-1x"></i>
+                        <i class="far fa-circle fa-stack-2x"></i>
+                    </span>
+                    <br>
+                    {{ item.title }}
+                </h4>
             {% endfor %}
-        </div>
-
-        <div class="center">
-            <a href="/servicos" class="btn-large waves-effect waves-light">Mais Serviços</a>
         </div>
     </div>
 </section>

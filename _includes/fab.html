@@ -1,37 +1,45 @@
 <div class="fixed-action-btn">
-    <a class="waves-effect waves-light btn-floating btn-large">
-        <i class="fas fa-plus"></i>
-    </a>
+    {% if page.layout == "default" %}
+        <a href="/" class="waves-effect waves-light btn-floating btn-large hide-on-small-only">
+            <i class="fas fa-home"></i>
+        </a>
+    {% endif %}
 
-    <ul>
-        <li>
-            <a 
-                href="tel:{{ site.celphone }}" 
-                class="waves-effect waves-light btn-floating tooltipped hide-on-med-and-up"
-                data-position="left"
-                data-tooltip="Ligue">
-                <i class="fas fa-phone"></i>
-            </a>
-        </li>
-
-        <li>
-            <a 
-                href="mailto:{{ site.email }}" 
-                class="waves-effect waves-light btn-floating tooltipped"
-                data-position="left"
-                data-tooltip="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </li>
-
-        <li>
-            <a 
-                href="/" 
-                class="waves-effect waves-light btn-floating tooltipped"
-                data-position="left"
-                data-tooltip="Página Inicial">
-                <i class="fas fa-home"></i>
-            </a>
-        </li>
-    </ul>
+    <div class="hide-on-med-and-up">
+        <a class="waves-effect waves-light btn-floating btn-large">
+            <i class="fas fa-plus"></i>
+        </a>
+    
+        <ul>
+            <li>
+                <a 
+                    href="tel:{{ site.celphone }}" 
+                    class="waves-effect waves-light btn-floating tooltipped"
+                    data-position="left"
+                    data-tooltip="Ligue">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a 
+                    href="mailto:{{ site.email }}" 
+                    class="waves-effect waves-light btn-floating tooltipped"
+                    data-position="left"
+                    data-tooltip="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a 
+                    href="/" 
+                    class="waves-effect waves-light btn-floating tooltipped"
+                    data-position="left"
+                    data-tooltip="Página Inicial">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
