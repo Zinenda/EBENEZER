@@ -1,20 +1,22 @@
-<section id="planos" class="section scrollspy grey lighten-4">
+<section id="planos" class="section scrollspy">
     <div class="container">
         <h3 class="center-align">Melhores <strong class="primary-color-text">Mensalidades</strong></h3>
-        <div class="owl-carousel owl-theme">
+        <div class="row">
             {% for item in site.mensalidade %}
-                <div class="hoverable center" style="border: solid 1px {{ site.color }};">
-                    <h3>
+                <div class="col s12 l4 hoverable center" style="border: solid 1px {{ site.color }};">
+                    <h5>
                         <i class="fas fa-pencil"></i>
                         <br>
                         {{ item.title }}
-                    </h3>
+                    </h5>
 
                     <p class="primary-color">
-                        <strong>{{ item.price }} MT/mês</strong>
+                        <strong class="bold">{{ item.price }} MT/mês</strong>
                     </p>
 
-                    <p class="justify">{{ item.content }}</p>
+                    <div class="justify">
+                        {{ item.content }}
+                    </div>
 
                     <a href="#" class="btn-flat waves-effect waves-primary">Saiba Mais</a>
                 </div>
