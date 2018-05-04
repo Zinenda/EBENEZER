@@ -1,6 +1,6 @@
 ---
 title: Atenção Medica
-icon: notes-medical
+icon: user-md
 ---
 Os alunos tem direito a atenção medica, portanto disponibilizamos um técnico de saúde a tempo inteiro para fazer acompanhamento da saúde e integridade física dos alunos.
 

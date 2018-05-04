@@ -1,20 +1,18 @@
-<section id="servicos" class="section scrollspy primary-color center">
+<section id="servicos" class="section scrollspy grey lighten-4">
     <div class="container">
-        <h3>
-            Nossos <strong class="white-text bold">Serviços</strong>
+        <h3 class="center-align">
+            Nossos <strong class="bold primary-color-text">Serviços</strong>
         </h3>
+        <div class="row">
+            <ul class="tabs tabs-fixed-width">
+                {% for item in site.servicos %}
+                    <li class="tab">
+                        <a href="#{{ forloop.index }}">{{ item.title }}</a>
+                    </li>    
+                {% endfor %}
+            </ul>
 
-        <div class="owl-carousel owl-theme">
-            {% for item in site.servicos %}
-                <h4>
-                    <span class="fa-stack fa-2x">
-                        <i class="fas fa-{{ item.icon }} fa-stack-1x"></i>
-                        <i class="far fa-circle fa-stack-2x"></i>
-                    </span>
-                    <br>
-                    {{ item.title }}
-                </h4>
-            {% endfor %}
+            {% include servicos-tabs.html %}
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 ---
 title: Transporte Escolar
-icon: truck
+icon: bus
 ---
 A Escola possui serviços de transportes para recolha de alunos, garantindo que cheguem a escola em segurança, bem como no seu regresso a casa.
 

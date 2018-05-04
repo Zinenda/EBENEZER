@@ -1,0 +1,11 @@
+{% for item in site.servicos %}
+    <div id="{{ forloop.index }}" class="col s12 primary-color">
+        <div class="container justify">
+            <h5 class="center-align">
+                <i class="fas fa-{{ item.icon }}"></i> {{ item.title }}
+            </h5>
+
+            {{ item.content }}
+        </div>
+    </div>
+{% endfor %}

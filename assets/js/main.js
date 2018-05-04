@@ -1,9 +1,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
-    $('.tabs').tabs({
-        swipeable: true
-    });
+    $('.tabs').tabs();
     $('.materialboxed').materialbox();
     $('.fixed-action-btn').floatingActionButton({
         hoverEnabled: false
