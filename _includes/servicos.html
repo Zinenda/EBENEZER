@@ -7,7 +7,13 @@
             <ul class="tabs tabs-fixed-width">
                 {% for item in site.servicos %}
                     <li class="tab">
-                        <a href="#{{ forloop.index }}">{{ item.title }}</a>
+                        <a href="#{{ forloop.index }}"
+                            class="tooltipped"
+                            data-position="top"
+                            data-delay="50"
+                            data-tooltip="{{ item.title }}">
+                            {{ item.title }}
+                        </a>
                     </li>    
                 {% endfor %}
             </ul>
