@@ -45,3 +45,13 @@ collections:
   servicos:
   mensalidade:
   gallery:
+
+pagination:
+  enabled: true
+  per_page: 15
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
