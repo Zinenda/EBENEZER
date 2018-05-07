@@ -5,7 +5,7 @@
         </h3>
 
         <div id="masonry-grid" class="row">
-            {% for item in site.galeria limit: 6 %}
+            {% for item in site.gallery limit: 6 %}
                 <div class="col s6 l4">
                     <img src="{{ item.image }}" alt="{{ item.title }}" data-caption="{{ item.title }}" class="materialboxed">
                 </div>
