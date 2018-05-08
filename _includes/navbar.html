@@ -1,11 +1,18 @@
 <div class="navbar-fixed">
     <nav class="nav-extended">
         <div class="nav-wrapper">
-            <a href="{{ page.url }}" class="brand-logo center hide-on-small-only">
+            <a href="/liceu" class="brand-logo center hide-on-small-only">
                 <img src="/assets/img/liceu_logo.png" alt="Liceu Ebenezer" class="hide-on-med-and-down center">
             </a>
 
-            <a href="{{ page.url }}" class="brand-logo hide-on-med-and-up left">{{ page.title }}</a>
+            <a href="/liceu" class="brand-logo hide-on-med-and-up left">
+                {% if page.layout == "default" %}
+                    {{ page.title }}
+
+                    {% else %}
+                        {{ site.title }}
+                {% endif %}
+            </a>
 
             <ul class="right hide-on-med-and-down">
                 {% for item in site.data.social limit: 3 %}

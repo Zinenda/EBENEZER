@@ -3,7 +3,7 @@
         <h3>Nosso <strong class="bold primary-color-text">Blog</strong></h3>
         <section class="row">
             {% for post in site.posts limit: 2 %}
-                <article class="col s12 l6 white">
+                <article class="col s12 l6 white hoverable">
                     <div class="row">
                         <a href="{{ post.url }}" class="primary-color-text">
                             <div class="col s12 l4">
@@ -13,9 +13,6 @@
                                 <p class="flow-text justify">{{ post.title }}</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="center">
-                        <a href="{{ post.url }}" class="btn waves-effect waves-light">Leia Mais</a>
                     </div>
                 </article>
             {% endfor %}

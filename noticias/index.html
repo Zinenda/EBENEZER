@@ -7,13 +7,13 @@ pagination:
 layout: default
 ---
 
-<header class="slider">
+<header class="slider hide-on-small-only">
 	<ul class="slides">
 		{% for post in site.posts limit: 4 %}
 			<li>
 				<img src="{{ post.image }}" alt="{{ post.title }}">
 				<div class="caption center-align">
-					<h4>{{ post.title }}</h4>
+					<h4 class="bold">{{ post.title }}</h4>
 				</div>
 			</li>
 		{% endfor %}
@@ -24,7 +24,7 @@ layout: default
 	<div class="container">
 		<div class="row">
 			{% for post in paginator.posts %}
-				<article class="grey lighten-4">
+				<article class="grey lighten-4 hoverable">
 					<div class="col s12 l4">
 						<img src="{{ post.image }}" alt="{{ post.title }}">
 					</div>
